@@ -1,0 +1,1 @@
+//sunucuya bağlanıp veri alış verişi burada gerçekleşecek 

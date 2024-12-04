@@ -1,16 +1,74 @@
-# flutter_app
+# Flutter Projesi 
 
-A new Flutter project.
+![İstinye üniversitesi](https://www.unitededucation.com/linklogoch/istinye-university-logo.png)
 
-## Getting Started
+## Proje Hakkında 
+[Bu projede kullanıcılar Türkiyede ve Dünyada spor haberleri hakkında bilgi sahibi olabilecekler. Ayrıca futbol takımlarının antreman fotoğraflarını görüp, günün haberlerini beğenebilecekler.]
 
-This project is a starting point for a Flutter application.
+## Ekip
+-  **Danışman:**
+ Keyvan Arasteh [https://github.com/keyvanarasteh](https://github.com/keyvanarasteh)
+-  **Takım Üyeleri:**
 
-A few resources to get you started if this is your first Flutter project:
+## Ana Özellikler
+- [Programda açık ve koyu tema olacak]
+- [Programda haberleri beğenme özellikleri olacak]
+- [Programda branş seçme olacak]
+- [Programda İngilizce ve Türkçe dil desteği olacak]
+- [Programda antrenman görselleri görülebilecek ve beğenilebilecek]
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Kullanılan Teknolojiler
+- Flutter 
+- Dart  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Başlangıç
+
+## Kurulum Adımları
+1. Projeyi bilgisayarınıza indirin:
+'''bash
+git clone [proje - adresi]
+'''
+
+2. Proje Klasörüne gidin:
+'''bash
+cd [proje - adı]
+'''
+
+3. Gerekli paketleri yükleyin
+'''bash
+flutter pub get
+'''
+
+## Projeye Katkı Sağlama
+1. Projeyi forklayın 
+2. Yeni bir dal oluşturun ('git checkout -b Ozellik/YeniOzellik')
+3. Değişikliklerinizi kaydedin ('git comit -e 'yeni ozellik eklendi'')
+4. Dalınıza gönderin ('git push origin ozellik/yeniozellik')
+5. Pull request oluşturma
+
+## Proje Yapısı
+lib/
+
+├── modeller/ # Veri modelleri
+
+├── ekranlar/ # Uygulama ekranları
+
+├── widgets/ # Tekrar kullanılabilir arayüz öğeleri
+
+├── servisler/ # API servisleri
+
+└── yardımcılar/ # Yardımcı fonksiyonlar
+
+# Ekran Görüntüleri
+[Uygulama ekran görüntüleri buraya eklenecek] 
+
+## Lisans 
+[MIT License] kapsamında lisanslanmıştır. Daha fazla bilgi için 'LICENSE' dosyasını inceleyebilirsiniz.
+
+## İletişim
+- Proje Bağlantısı: [https://github.com/ilhandzgn]
+- İstinye Üniversitesi: [https://www.istinye.edu.tr/tr](https://www.istinye.edu.tr/tr)
+
+## Teşekkürler
+
+- Başta Öğretmenimiz Sayın Keyvan Arasteh'e ve İstinye Üniversitesi'ne destekleri için teşekkür ederim. 

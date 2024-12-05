@@ -2,6 +2,10 @@
 import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_app/core/constants.dart';
+// ignore: unused_import
+import 'package:flutter_app/core/routes.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 
 class LoadingScreen extends StatelessWidget {
@@ -10,7 +14,7 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 62, 86, 128),
+      backgroundColor: loadingarkaplanrengi,
       body:
 
           // Logo ve yükleme göstergesi bölümü
@@ -32,17 +36,19 @@ class LoadingScreen extends StatelessWidget {
 
             // Yükleniyor yazısı
             // const CircularProgressIndicator(),
-
-            SizedBox(
-              width: 70,
-              child: DotLottieLoader.fromAsset("assets/motions/logo.lottie",
-                  frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
-                if (dotlottie != null) {
-                  return Lottie.memory(dotlottie.animations.values.single);
-                } else {
-                  return Container();
-                }
-              }),
+            InkWell(
+              onTap: () => context.go("/home"),
+              child: SizedBox(
+                width: 70,
+                child: DotLottieLoader.fromAsset("assets/motions/logo.lottie",
+                    frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
+                  if (dotlottie != null) {
+                    return Lottie.memory(dotlottie.animations.values.single);
+                  } else {
+                    return Container();
+                  }
+                }),
+              ),
             ),
 
             const SizedBox(height: 20),

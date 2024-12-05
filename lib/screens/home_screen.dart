@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_app/core/constants.dart';
+// ignore: unused_import
+import 'package:flutter_app/core/routes.dart';
+import 'package:go_router/go_router.dart';
+
+import '../widgets/bottom_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -7,12 +13,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: arkaplanrenklerim,
       // AppBar
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: const Text('Ana Sayfa'),
         actions: [
           IconButton(
-            icon: const Icon(CupertinoIcons.bell),
+            icon: const Icon(CupertinoIcons.app),
             onPressed: () {},
           ),
         ],
@@ -20,25 +28,26 @@ class HomeScreen extends StatelessWidget {
 
       // Drawer (Yan Menü)
       drawer: Drawer(
+        backgroundColor: drawerrenklerim,
         child: Column(
           children: [
             // Drawer Header
             Container(
               height: 200,
-              color: Colors.blue,
+              color: Colors.orange,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Icon(
                     CupertinoIcons.person_circle,
                     size: 80,
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 0, 0, 0),
                   ),
                   const SizedBox(height: 10),
                   const Text(
                     'Kullanıcı Adı',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 18,
                     ),
                   ),
@@ -49,13 +58,55 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               leading: const Icon(CupertinoIcons.home),
               title: const Text('Ana Sayfa'),
+              iconColor: draweryazirenklerim,
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
+              leading: const Icon(CupertinoIcons.photo_camera_solid),
+              title: const Text('Antrenman Resimleri'),
+              iconColor: draweryazirenklerim,
+              onTap: () {
+                context.go("/photo");
+              },
+            ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.hand_thumbsup_fill),
+              title: const Text('Beğenilen Resimler'),
+              iconColor: draweryazirenklerim,
+              onTap: () {
+                context.go("/like");
+              },
+            ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.news_solid),
+              title: const Text('Haberler'),
+              iconColor: draweryazirenklerim,
+              onTap: () {
+                context.go("/news");
+              },
+            ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.sportscourt_fill),
+              title: const Text('Spor Dalı'),
+              iconColor: draweryazirenklerim,
+              onTap: () {
+                context.go("/sport");
+              },
+            ),
+            ListTile(
+              leading: const Icon(CupertinoIcons.person),
+              title: const Text('Profilim'),
+              iconColor: draweryazirenklerim,
+              onTap: () {
+                context.go("/profile");
+              },
+            ),
+            ListTile(
               leading: const Icon(CupertinoIcons.settings),
               title: const Text('Ayarlar'),
+              iconColor: draweryazirenklerim,
               onTap: () {
                 Navigator.pop(context);
               },
@@ -77,25 +128,7 @@ class HomeScreen extends StatelessWidget {
       ),
 
       // Alt navigasyon çubuğu
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'Ana Sayfa',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.search),
-            label: 'Keşfet',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.person),
-            label: 'Profil',
-          ),
-        ],
-        onTap: (index) {
-          // Navigasyon işlemleri buraya gelecek
-        },
-      ),
+      bottomNavigationBar: BottomMenu(),
     );
   }
 }

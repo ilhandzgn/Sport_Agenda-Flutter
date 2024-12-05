@@ -1,1 +1,0 @@
-//açılış ekranlarımız buraya gelecek 

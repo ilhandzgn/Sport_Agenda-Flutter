@@ -31,18 +31,21 @@ class LoadingScreen extends StatelessWidget {
             ),
 
             // Yükleniyor yazısı
-            const CircularProgressIndicator(),
+            // const CircularProgressIndicator(),
 
-            DotLottieLoader.fromAsset("assets/motions/TfBxOj60Vb.lottie",
-                frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
-              if (dotlottie != null) {
-                return Lottie.memory(dotlottie.animations.values.single);
-              } else {
-                return Container();
-              }
-            }),
+            SizedBox(
+              width: 70,
+              child: DotLottieLoader.fromAsset("assets/motions/logo.lottie",
+                  frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
+                if (dotlottie != null) {
+                  return Lottie.memory(dotlottie.animations.values.single);
+                } else {
+                  return Container();
+                }
+              }),
+            ),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
           ],
         ),
       ),

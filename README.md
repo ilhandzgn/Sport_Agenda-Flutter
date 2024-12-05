@@ -38,6 +38,12 @@ cd [proje - adı]
 '''bash
 flutter pub get
 '''
+## Uygulama Ekran Görüntüsü
+1. [Giriş Ekranı]![giris.webp](file:///C:/Users/ilhan/Desktop/giris.webp)
+2. [Ana Sayfa]![anasayfa.webp] (file:///C:/Users/ilhan/Desktop/anasayfa.webp) 
+3. [Drawer Görseli]![drawer.webp](file:///C:/Users/ilhan/Desktop/drawer.webp)
+4. [Haberler Görseli]![haberler.webp](file:///C:/Users/ilhan/Desktop/haberler.webp)
+5. [Antrenmanlar Görseli]![antrenmanlar.webp](file:///C:/Users/ilhan/Desktop/haberler.webp)
 
 ## Projeye Katkı Sağlama
 1. Projeyi forklayın 

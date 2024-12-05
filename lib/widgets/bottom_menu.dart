@@ -11,6 +11,7 @@ class BottomMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Colors.orange,
       height: 70,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,

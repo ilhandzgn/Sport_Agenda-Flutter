@@ -10,7 +10,7 @@ class SportScreen extends StatefulWidget {
 }
 
 class _SportScreenState extends State<SportScreen> {
-  String selectedSport = 'Hiçbiri'; // Varsayılan spor dalı
+  String selectedSport = 'Hiçbiri';
 
   void _showSportSelectionDialog(BuildContext context) {
     showDialog(

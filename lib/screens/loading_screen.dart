@@ -1,4 +1,3 @@
-//açılış ekranlarımız buraya gelecek
 import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -15,14 +14,20 @@ class LoadingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: loadingarkaplanrengi,
-      body:
-
-          // Logo ve yükleme göstergesi bölümü
-          SizedBox.expand(
-        // width: double.infinity,
+      body: SizedBox.expand(
         child: Column(
           children: [
-            // Logo bölümü
+            const Padding(
+              padding: EdgeInsets.only(top: 50),
+              child: Text(
+                "Spor Gündemi",
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.orange,
+                ),
+              ),
+            ),
             Expanded(
               child: Container(
                 width: 150,
@@ -33,9 +38,6 @@ class LoadingScreen extends StatelessWidget {
                 ),
               ),
             ),
-
-            // Yükleniyor yazısı
-            // const CircularProgressIndicator(),
             InkWell(
               onTap: () => context.go("/home"),
               child: SizedBox(
@@ -50,7 +52,6 @@ class LoadingScreen extends StatelessWidget {
                 }),
               ),
             ),
-
             const SizedBox(height: 20),
           ],
         ),

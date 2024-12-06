@@ -63,7 +63,7 @@ lib/
 # Ekran Görüntüleri
 ![Ekran Görüntüsü](assets/images/Giris.png)
 ![Ekran Görüntüsü](assets/images/AnaSayfa.png)
-![Ekran Görüntüsü](assets/images/Drawer.png)
+![Ekran Görüntüsü](assets/images/Anaekrann.png)
 ![Ekran Görüntüsü](assets/images/Haberler.png)
 ![Ekran Görüntüsü](assets/images/Fotograflar.png)
 ![Ekran Görüntüsü](assets/images/Profil.png)

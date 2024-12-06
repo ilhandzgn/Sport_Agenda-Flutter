@@ -20,18 +20,18 @@ class LoadingScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.only(top: 50),
               child: Text(
-                "Spor Gündemi",
+                "",
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
-                  color: Colors.orange,
+                  color: Color.fromARGB(255, 255, 153, 0),
                 ),
               ),
             ),
             Expanded(
               child: Container(
-                width: 150,
-                height: 150,
+                width: 300,
+                height: 300,
                 child: Image.asset(
                   'assets/images/logo.webp',
                   fit: BoxFit.contain,

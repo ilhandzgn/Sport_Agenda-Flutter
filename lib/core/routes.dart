@@ -12,9 +12,8 @@ import 'package:go_router/go_router.dart';
 import '../screens/loading_screen.dart';
 import '../screens/home_screen.dart';
 
-// Router yapılandırması
 final router = GoRouter(
-  initialLocation: '/', // Başlangıç rotası
+  initialLocation: '/',
   routes: [
     GoRoute(
       path: '/',
@@ -22,7 +21,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/home',
-      builder: (context, state) => const HomeScreen(),
+      builder: (context, state) => HomeScreen(),
     ),
     GoRoute(
       path: '/profile',
@@ -30,7 +29,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/photo',
-      builder: (context, state) => const PhotoScreen(),
+      builder: (context, state) => PhotoScreen(),
     ),
     GoRoute(
       path: '/search',
@@ -46,7 +45,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/news',
-      builder: (context, state) => const NewsScreen(),
+      builder: (context, state) => NewsScreen(),
     ),
   ],
 );

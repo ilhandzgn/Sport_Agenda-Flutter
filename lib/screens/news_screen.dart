@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_app/core/constants.dart';
 import 'package:flutter_app/widgets/bottom_menu.dart';
 
 class NewsScreen extends StatelessWidget {
@@ -27,6 +28,7 @@ class NewsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Haberler"),
+        backgroundColor: drawerrenklerim,
       ),
       body: ListView.builder(
         itemCount: newsData.length,

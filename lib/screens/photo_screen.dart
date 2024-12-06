@@ -70,6 +70,7 @@ class PhotoScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Antrenman Fotoğrafları"),
+        backgroundColor: drawerrenklerim,
         actions: [
           IconButton(
             icon: const Icon(Icons.favorite),

@@ -31,7 +31,7 @@ git clone [proje - adresi]
 
 2. Proje Klasörüne gidin:
 '''bash
-cd [proje - adı]
+cd [Flutter - SPORT_AGENDA.FLUTTER]
 '''
 
 3. Gerekli paketleri yükleyin
@@ -61,7 +61,8 @@ lib/
 └── yardımcılar/ # Yardımcı fonksiyonlar
 
 # Ekran Görüntüleri
-[Uygulama ekran görüntüleri buraya eklenecek] 
+![Ana Sayfa](assets/images/AnaSayfa.png)
+
 
 ## Lisans 
 [MIT License] kapsamında lisanslanmıştır. Daha fazla bilgi için 'LICENSE' dosyasını inceleyebilirsiniz.

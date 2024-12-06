@@ -1,4 +1,5 @@
-//uygulamada sayfaları ve navigasyon işlemlerini burada tanımlayacağızimport 'package:flutter/material.dart';
+// ignore: unused_import
+import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:flutter/widgets.dart';
 import 'package:flutter_app/screens/like_screen.dart';
@@ -11,8 +12,9 @@ import 'package:go_router/go_router.dart';
 import '../screens/loading_screen.dart';
 import '../screens/home_screen.dart';
 
+// Router yapılandırması
 final router = GoRouter(
-  initialLocation: '/',
+  initialLocation: '/', // Başlangıç rotası
   routes: [
     GoRoute(
       path: '/',
@@ -20,7 +22,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/home',
-      builder: (context, state) => HomeScreen(),
+      builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(
       path: '/profile',
@@ -28,7 +30,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/photo',
-      builder: (context, state) => PhotoScreen(),
+      builder: (context, state) => const PhotoScreen(),
     ),
     GoRoute(
       path: '/search',
@@ -36,7 +38,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/like',
-      builder: (context, state) => LikeScreen(),
+      builder: (context, state) => const LikeScreen(),
     ),
     GoRoute(
       path: '/sport',
@@ -44,7 +46,7 @@ final router = GoRouter(
     ),
     GoRoute(
       path: '/news',
-      builder: (context, state) => NewsScreen(),
+      builder: (context, state) => const NewsScreen(),
     ),
   ],
 );

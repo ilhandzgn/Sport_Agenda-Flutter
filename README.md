@@ -53,6 +53,14 @@ lib/
 ├── modeller/ # Veri modelleri
 
 ├── ekranlar/ # Uygulama ekranları
+home_screen.dart
+like_screen.dart
+loading_screen.dart
+news_screen.dart
+photo_scren.dart
+profile_screen.dart
+search_screen.dart
+sport_screen.dart
 
 ├── widgets/ # Tekrar kullanılabilir arayüz öğeleri
 

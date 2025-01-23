@@ -30,8 +30,42 @@ const dark_colors = {
 };
 final darkTheme = ThemeData(
   brightness: Brightness.dark,
+  textTheme: TextTheme(
+    bodySmall: GoogleFonts.roboto(),
+    bodyMedium: GoogleFonts.roboto(),
+    bodyLarge: GoogleFonts.roboto(),
+    labelSmall: GoogleFonts.roboto(),
+    labelMedium: GoogleFonts.roboto(),
+    labelLarge: GoogleFonts.roboto(),
+    titleSmall: GoogleFonts.roboto(),
+    titleMedium: GoogleFonts.roboto(),
+    titleLarge: GoogleFonts.roboto(),
+    headlineSmall: GoogleFonts.roboto(),
+    headlineMedium: GoogleFonts.roboto(),
+    headlineLarge: GoogleFonts.roboto(),
+    displaySmall: GoogleFonts.roboto(),
+    displayMedium: GoogleFonts.roboto(),
+    displayLarge: GoogleFonts.roboto(),
+  ),
 );
 
 final lightTheme = ThemeData(
   brightness: Brightness.light,
+  textTheme: TextTheme(
+    bodySmall: GoogleFonts.roboto(),
+    bodyMedium: GoogleFonts.roboto(),
+    bodyLarge: GoogleFonts.roboto(),
+    labelSmall: GoogleFonts.roboto(),
+    labelMedium: GoogleFonts.roboto(),
+    labelLarge: GoogleFonts.roboto(),
+    titleSmall: GoogleFonts.roboto(),
+    titleMedium: GoogleFonts.roboto(),
+    titleLarge: GoogleFonts.roboto(),
+    headlineSmall: GoogleFonts.roboto(),
+    headlineMedium: GoogleFonts.roboto(),
+    headlineLarge: GoogleFonts.roboto(),
+    displaySmall: GoogleFonts.roboto(),
+    displayMedium: GoogleFonts.roboto(),
+    displayLarge: GoogleFonts.roboto(),
+  ),
 );

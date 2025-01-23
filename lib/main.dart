@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Flutter App',
+      title: 'SPORT AGENDA',
       themeMode: ThemeMode.dark,
       theme: lightTheme,
       darkTheme: darkTheme,

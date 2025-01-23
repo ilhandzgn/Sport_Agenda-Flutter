@@ -24,22 +24,18 @@ class ProfileScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
+            Text(
               'Kişisel Bilgiler:',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 0, 0, 0),
-              ),
+              style: Theme.of(context).textTheme.displayMedium,
             ),
             const SizedBox(height: 16),
             Text(
               'Ad: $firstName',
-              style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
             Text(
               'Soyad: $lastName',
-              style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+              style: Theme.of(context).textTheme.headlineLarge,
             ),
             const SizedBox(height: 20),
             const Text(

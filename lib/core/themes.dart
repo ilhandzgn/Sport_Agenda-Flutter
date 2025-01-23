@@ -20,10 +20,10 @@ const colors = {
 
 // ignore: constant_identifier_names
 const dark_colors = {
-  "primary": Color.fromARGB(255, 255, 153, 0),
-  "onPrimary": Color.fromARGB(255, 41, 133, 156),
+  "primary": Color.fromARGB(255, 0, 0, 0),
+  "onPrimary": Color.fromARGB(255, 255, 153, 0),
   "secondary": Color.fromARGB(255, 0, 0, 0),
-  "onSecondary": Color.fromARGB(255, 73, 69, 69),
+  "onSecondary": Color.fromARGB(255, 0, 0, 0),
   "surface": Color.fromARGB(255, 0, 0, 0),
   "onsurface": Color.fromARGB(255, 0, 0, 0),
   "error": Colors.red,

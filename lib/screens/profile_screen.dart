@@ -14,7 +14,7 @@ class ProfileScreen extends StatelessWidget {
     List<String> likedImages = [];
 
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 41, 133, 156),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
         title: const Text('Profilim'),
         backgroundColor: drawerrenklerim,
@@ -29,17 +29,17 @@ class ProfileScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: Colors.white,
+                color: Color.fromARGB(255, 0, 0, 0),
               ),
             ),
             const SizedBox(height: 16),
             Text(
               'Ad: $firstName',
-              style: const TextStyle(color: Colors.white),
+              style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
             ),
             Text(
               'Soyad: $lastName',
-              style: const TextStyle(color: Colors.white),
+              style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
             ),
             const SizedBox(height: 20),
             const Text(
@@ -47,7 +47,7 @@ class ProfileScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: Colors.white,
+                color: Color.fromARGB(255, 0, 0, 0),
               ),
             ),
             const SizedBox(height: 16),

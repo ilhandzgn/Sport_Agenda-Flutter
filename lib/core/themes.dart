@@ -25,6 +25,13 @@ const dark_colors = {
   "secondary": Color.fromARGB(255, 0, 0, 0),
   "onSecondary": Color.fromARGB(255, 73, 69, 69),
   "surface": Color.fromARGB(255, 0, 0, 0),
-  "onsurface": Color.fromARGB(255, 252, 252, 252),
+  "onsurface": Color.fromARGB(255, 0, 0, 0),
   "error": Colors.red,
 };
+final darkTheme = ThemeData(
+  brightness: Brightness.dark,
+);
+
+final lightTheme = ThemeData(
+  brightness: Brightness.light,
+);

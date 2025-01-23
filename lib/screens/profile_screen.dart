@@ -14,7 +14,7 @@ class ProfileScreen extends StatelessWidget {
     List<String> likedImages = [];
 
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 0, 63, 79),
+      backgroundColor: const Color.fromARGB(255, 41, 133, 156),
       appBar: AppBar(
         title: const Text('Profilim'),
         backgroundColor: drawerrenklerim,

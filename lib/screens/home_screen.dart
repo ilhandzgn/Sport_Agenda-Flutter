@@ -52,16 +52,16 @@ class HomeScreen extends StatelessWidget {
             Container(
               height: 200,
               color: Colors.orange,
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(
+                  Icon(
                     CupertinoIcons.person_circle,
                     size: 80,
                     color: Color.fromARGB(255, 0, 0, 0),
                   ),
-                  const SizedBox(height: 10),
-                  const Text(
+                  SizedBox(height: 10),
+                  Text(
                     'Kullanıcı Adı',
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
@@ -174,7 +174,7 @@ class HomeScreen extends StatelessWidget {
           );
         },
       ),
-      bottomNavigationBar: BottomMenu(),
+      bottomNavigationBar: const BottomMenu(),
     );
   }
 }

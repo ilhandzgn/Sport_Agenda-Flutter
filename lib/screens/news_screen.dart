@@ -41,7 +41,7 @@ class NewsScreen extends StatelessWidget {
                 builder: (_) => AlertDialog(
                   title: Text(
                     item['title']!,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.bold,
                         fontSize: 20),

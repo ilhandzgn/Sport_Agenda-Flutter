@@ -6,8 +6,11 @@ import 'package:flutter_app/screens/like_screen.dart';
 import 'package:flutter_app/screens/news_screen.dart';
 import 'package:flutter_app/screens/photo_screen.dart';
 import 'package:flutter_app/screens/profile_screen.dart';
+import 'package:flutter_app/screens/register_screen.dart';
 import 'package:flutter_app/screens/search_screen.dart';
 import 'package:flutter_app/screens/sport_screen.dart';
+// ignore: unused_import
+import 'package:flutter_app/screens/login_screen.dart';
 import 'package:go_router/go_router.dart';
 import '../screens/loading_screen.dart';
 import '../screens/home_screen.dart';
@@ -42,6 +45,14 @@ final router = GoRouter(
     GoRoute(
       path: '/sport',
       builder: (context, state) => const SportScreen(),
+    ),
+    GoRoute(
+      path: '/login',
+      builder: (context, state) => const LoginScreen(),
+    ),
+    GoRoute(
+      path: '/register',
+      builder: (context, state) => const RegisterScreen(),
     ),
     GoRoute(
       path: '/news',

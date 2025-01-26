@@ -11,6 +11,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     String firstName = "İlhan";
     String lastName = "Düzgün";
+    // ignore: unused_local_variable
     List<String> likedImages = [];
 
     return Scaffold(

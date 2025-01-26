@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'SPORT AGENDA',
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       theme: lightTheme,
       darkTheme: darkTheme,
       routerConfig: router, // go_router yapılandırmamızı kullan

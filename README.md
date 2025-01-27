@@ -78,6 +78,10 @@ lib/
 ![Ekran Görüntüsü](assets/images/Fotograflar.png)
 ![Ekran Görüntüsü](assets/images/Profil.png)
 
+# Tanıtım videosu
+![Uygulama Tanıtım videosu](assets/videos/uygulama-tanitim.mp.mp4)
+
+
 
 ## Lisans 
 [MIT License] kapsamında lisanslanmıştır. Daha fazla bilgi için 'LICENSE' dosyasını inceleyebilirsiniz.

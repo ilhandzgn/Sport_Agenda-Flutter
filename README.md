@@ -79,7 +79,7 @@ lib/
 ![Ekran Görüntüsü](assets/images/Profil.png)
 
 # Tanıtım videosu
-![Uygulama Tanıtım videosu](assets/videos/uygulama-tanitim.mp.mp4)
+[Uygulama Tanıtım videosu](assets/videos/uygulama-tanitim.mp.mp4)
 
 
 

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_app/core/themes.dart';
+import 'package:provider/provider.dart';
 import 'package:flutter_app/core/constants.dart';
 import 'package:go_router/go_router.dart';
-
 import '../widgets/bottom_menu.dart';
+import '../theme_provider.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -34,19 +36,31 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: arkaplanrenklerim,
+      backgroundColor: context.watch<ThemeProvider>().isDarkMode
+          ? dark_colors["surface"]
+          : colors["surface"],
       appBar: AppBar(
-        backgroundColor: drawerrenklerim,
+        backgroundColor: context.watch<ThemeProvider>().isDarkMode
+            ? dark_colors["primary"]
+            : colors["primary"],
         title: const Text('Ana Sayfa'),
         actions: [
           IconButton(
-            icon: const Icon(CupertinoIcons.app),
-            onPressed: () {},
+            icon: Icon(
+              context.watch<ThemeProvider>().isDarkMode
+                  ? CupertinoIcons.sun_max
+                  : CupertinoIcons.moon_stars,
+            ),
+            onPressed: () {
+              context.read<ThemeProvider>().toggleTheme();
+            },
           ),
         ],
       ),
       drawer: Drawer(
-        backgroundColor: drawerrenklerim,
+        backgroundColor: context.watch<ThemeProvider>().isDarkMode
+            ? dark_colors["primary"]
+            : colors["primary"],
         child: Column(
           children: [
             Container(

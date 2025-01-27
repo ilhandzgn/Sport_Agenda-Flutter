@@ -1,7 +1,6 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_import, duplicate_ignore
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_app/core/themes.dart';
 import 'package:go_router/go_router.dart';
 
@@ -20,7 +19,6 @@ class __LoginScreensState extends State<LoginScreen> {
     if (epostaYonetici.text.isEmpty || sifreYonetici.text.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text("Bilgilerinizi Giriniz"),
-        //action: SnackBarAction(label: "Kapat", onPressed: () {}),
         behavior: SnackBarBehavior.floating,
         backgroundColor: Colors.red,
         showCloseIcon: true,
@@ -28,8 +26,7 @@ class __LoginScreensState extends State<LoginScreen> {
     } else {
       if (sifreYonetici.text.length < 8) {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: Text("Sifre Minimum 8 Haneli Olabilir"),
-          //action: SnackBarAction(label: "Kapat", onPressed: () {}),
+          content: Text("Şifre Minimum 8 Haneli Olabilir"),
           behavior: SnackBarBehavior.floating,
           backgroundColor: Colors.red,
           showCloseIcon: true,
@@ -43,10 +40,15 @@ class __LoginScreensState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Giriş Yap"),
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: colors["primary"],
+      ),
       body: Center(
-        child: SizedBox(
-          width: 250,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 32.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -54,33 +56,60 @@ class __LoginScreensState extends State<LoginScreen> {
                 controller: epostaYonetici,
                 decoration: InputDecoration(
                   hintText: "E-Posta",
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  contentPadding:
+                      EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 ),
-                //keyboardType: TextInputType.number,
-                //inputFormatters: [
-                //FilteringTextInputFormatter.digitsOnly,
-                //],
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 16),
               TextFormField(
                 obscureText: true,
                 controller: sifreYonetici,
                 decoration: InputDecoration(
-                  hintText: "Sifre",
-                  border: OutlineInputBorder(),
+                  hintText: "Şifre",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  contentPadding:
+                      EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 ),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 16),
               ElevatedButton(
                 onPressed: girisYap,
-                child: const Text("Giris Yap"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: colors["primary"],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: EdgeInsets.symmetric(vertical: 16),
+                ),
+                child: const Text(
+                  "Giriş Yap",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                ),
               ),
               SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {
                   context.pushReplacement("/register");
                 },
-                child: const Text("Kaydol"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: colors["secondary"],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: EdgeInsets.symmetric(vertical: 16),
+                ),
+                child: Text(
+                  "Kaydol",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: colors["onSecondary"]),
+                ),
               ),
             ],
           ),

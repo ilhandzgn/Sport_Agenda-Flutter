@@ -1,7 +1,8 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_app/widgets/bottom_menu.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_app/core/themes.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -9,25 +10,75 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: [
-          const Text("Sayfalar Arasi Gecis"),
-          ElevatedButton(
-            onPressed: () {
-              context.go("/login");
-            },
-            child: const Text("Giris Yapiniz | go"),
-          ),
-          const Divider(),
-          ElevatedButton(
-            onPressed: () {
-              context.push("/login");
-            },
-            child: const Text("Giris Yapiniz | push"),
-          )
-        ],
+      appBar: AppBar(
+        title: const Text("Sayfalar Arası Geçiş"),
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: colors["primary"],
       ),
-      bottomNavigationBar: const BottomMenu(),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Sayfalar Arası Geçiş",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: colors["primary"],
+                ),
+              ),
+              const SizedBox(height: 40),
+              ElevatedButton(
+                onPressed: () {
+                  context.go("/login");
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: colors["primary"],
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 16, horizontal: 30),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  elevation: 5,
+                ),
+                child: const Text(
+                  "Giriş Yapınız | go",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                  context.push("/login");
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: colors["primary"],
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 16, horizontal: 30),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  elevation: 5,
+                ),
+                child: const Text(
+                  "Giriş Yapınız | push",
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+              const SizedBox(height: 32),
+              Divider(
+                color: Colors.grey,
+                thickness: 1,
+                height: 40,
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

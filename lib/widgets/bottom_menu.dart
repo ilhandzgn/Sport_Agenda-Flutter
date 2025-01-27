@@ -24,12 +24,6 @@ class BottomMenu extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              context.go("/search");
-            },
-            icon: Icon(CupertinoIcons.search),
-          ),
-          IconButton(
-            onPressed: () {
               context.go("/photo");
             },
             icon: Icon(CupertinoIcons.camera),

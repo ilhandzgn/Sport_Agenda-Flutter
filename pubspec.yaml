@@ -69,6 +69,7 @@ flutter:
   - assets/icons/
   - assets/languages/
   - assets/motions/
+  - assets/videos/
   
 
   # To add assets to your application, add an assets section, like this:

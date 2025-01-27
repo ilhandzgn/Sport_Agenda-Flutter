@@ -72,14 +72,17 @@ lib/
 
 # Ekran Görüntüleri
 ![Ekran Görüntüsü](assets/images/Giris.png)
+![Ekran Görüntüsü](assets/images/GirisYap.png)
+![Ekran Görüntüsü](assets/images/Kaydol.png)
 ![Ekran Görüntüsü](assets/images/AnaSayfa.png)
-![Ekran Görüntüsü](assets/images/Anaekrann.png)
-![Ekran Görüntüsü](assets/images/Haberler.png)
-![Ekran Görüntüsü](assets/images/Fotograflar.png)
+![Ekran Görüntüsü](assets/images/Draver.png)
 ![Ekran Görüntüsü](assets/images/Profil.png)
+![Ekran Görüntüsü](assets/images/Haberler.png)
+![Ekran Görüntüsü](assets/images/Resimler.png)
+![Ekran Görüntüsü](assets/images/Antrenman.png)
 
 # Tanıtım videosu
-[Uygulama Tanıtım videosu - Video Linkine Tıklayınız Açılan Sayfada Sağ Üstten Videoyu İndirip Videoyu İzleyebilirsiniz ](assets/videos/uygulama-tanitim.mp.mp4)
+[Uygulama Tanıtım videosu - Buraya Tıklayınız Açılan Sayfada Sağ Üstten Videoyu İndirip Videoyu İzleyebilirsiniz ](assets/videos/uygulama-tanitim.mp.mp4)
 
 
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: unnecessary_import
 import 'package:flutter/widgets.dart';
 import 'package:flutter_app/core/constants.dart';
 import 'package:flutter_app/widgets/bottom_menu.dart';
@@ -89,7 +90,7 @@ class ProfileScreen extends StatelessWidget {
                 elevation: 5,
               ),
               onPressed: () {
-                context.go('/login');
+                context.go('/serch');
               },
               child: const Text(
                 'Çıkış Yap',

@@ -56,9 +56,11 @@ lib/
 - home_screen.dart
 - like_screen.dart
 - loading_screen.dart
+- login_screen.dart
 - news_screen.dart
 - photo_scren.dart
 - profile_screen.dart
+- register_screen.dart
 - search_screen.dart
 - sport_screen.dart
 

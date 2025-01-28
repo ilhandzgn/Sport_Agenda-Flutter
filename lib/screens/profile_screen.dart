@@ -90,7 +90,7 @@ class ProfileScreen extends StatelessWidget {
                 elevation: 5,
               ),
               onPressed: () {
-                context.go('/serch');
+                context.go('/login');
               },
               child: const Text(
                 'Çıkış Yap',

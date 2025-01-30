@@ -83,6 +83,8 @@ lib/
 
 # Tanıtım videosu
 [Uygulama Tanıtım videosu - Buraya Tıklayınız Açılan Sayfada Sağ Üstten Videoyu İndirip Videoyu İzleyebilirsiniz ](assets/videos/uygulama-tanitim.mp.mp4)
+[Uygulama Tanıtım Videosunu YouTube'da İzleyin](https://www.youtube.com/watch?v=Df1ihayfesk)
+
 
 
 
